@@ -1,0 +1,671 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sample template for MIT Junior Lab Student Written Summaries
+% Available from http://web.mit.edu/8.13/www/Samplepaper/sample-paper.tex
+%
+% Last Updated April 12, 2007
+%
+% Adapted from the American Physical Societies REVTeK-4 Pages
+% at http://publish.aps.org
+%
+% ADVICE TO STUDENTS: Each time you write a paper, start with this
+%    template and save under a new filename.  If convenient, don't
+%    erase unneeded lines, just comment them out.  Often, they
+%    will be useful containers for information.
+%
+% Using pdflatex, images must be either PNG, GIF, JPEG or PDF.
+%     Turn eps to pdf using epstopdf.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PREAMBLE
+% The preamble of a LaTeX document is the set of commands that precede
+% the \begin{document} line.  It contains a \documentclass line
+% to load the REVTeK-4 macro definitions and various \usepackage
+% lines to load other macro packages.
+%
+% ADVICE TO STUDENTS: This preamble contains a suggested set of
+%     class options to generate a ``Junior Lab'' look and feel that
+%     facilitate quick review and feedback from one's peers, TA's
+%     and section instructors.  Don't make substantial changes without
+%     first consulting your section instructor.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[aps,twocolumn,twoside,secnumarabic,balancelastpage,amsmath,amssymb,nofootinbib,hyperref=pdftex]{revtex4}
+
+% Documentclass Options
+    % aps, prl, rmp stand for American Physical Society, Physical Review Letters, and Reviews of Modern Physics, respectively
+    % twocolumn permits two columns, of course
+    % nobalancelastpage doesn't attempt to equalize the lengths of the two columns on the last page
+        % as might be desired in a journal where articles follow one another closely
+    % amsmath and amssymb are necessary for the subequations environment among others
+    % secnumarabic identifies sections by number to aid electronic review and commentary.
+    % nofootinbib forces footnotes to occur on the page where they are first referenced
+        % and not in the bibliography
+    % REVTeX 4 is a set of macro packages designed to be used with LaTeX 2e.
+        % REVTeX is well-suited for preparing manuscripts for submission to APS journals.
+
+
+%\usepackage{lgrind}        % convert program listings to a form includable in a LaTeX document
+\usepackage{chapterbib}    % allows a bibliography for each chapter (each labguide has it's own)
+\usepackage{color}         % produces boxes or entire pages with colored backgrounds
+\usepackage{graphics}      % standard graphics specifications
+\usepackage[pdftex]{graphicx}      % alternative graphics specifications
+\usepackage{longtable}     % helps with long table options
+\usepackage{epsf}          % old package handles encapsulated post script issues
+\usepackage{bm}            % special 'bold-math' package
+\usepackage{verbatim}			% for comment environment
+%\usepackage{asymptote}     % For typesetting of mathematical illustrations
+%\usepackage{thumbpdf}
+\usepackage[colorlinks=true]{hyperref}  % this package should be added after all others
+                                        % use as follows: \url{http://web.mit.edu/8.13}
+
+%Next line moves text up a bit without changing text area size  
+\addtolength\topmargin{-.5\topmargin} %increases the top margin by half.
+
+%
+% And now, begin the document...
+% Students should not have to alter anything above this line
+%
+
+\begin{document}
+\title{Writing Scientific Reports Using \LaTeX\footnote{
+This document was adapted from the original---written for MIT Junior lab students,
+\url{web.mit.edu/8.13/www/}
+}}
+\author         {Aaron Wade}
+\email          {awade1@uwf.edu}
+\homepage{http://uwf.edu/awade1/ModernLab/}
+\date{\today}
+\affiliation{University of West Florida Physics Department}
+
+
+\begin{abstract}
+This part, the abstract is an essential part of a scientific paper---often the only
+component freely viewable from search engines.
+It should briefly summarize the background, the purpose,
+the method, and most importantly,
+the quantitative results with errors.
+Based on those, a conclusion may be drawn.
+In this paper, we present a \LaTeX\ template for formal reports in PHY4803L.
+It is based on the REV\TeX\ document class from the
+American Physical Society---a standard for the
+Physical Review journals as well as many others.
+Your paper should demonstrate your mastery of the entire experiment.
+It should be neat in appearance with correct English.
+It should be concise; four single-spaced pages including figures should suffice.
+Not included in the four-page limit, appendices can be used to
+present data that is summarized in the main body,
+for derivations referred to in the main body,
+and for answers to questions posed in the experimental guides.
+
+\end{abstract}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction and Theory}
+
+The introduction typically places
+the current work in context with prior work
+and explains what new physics is involved
+and why the article is worth reading.
+For your articles, use one or more paragraphs to
+succinctly explain the motivation, purpose and relevant
+background to the experiment.
+This should be done at a level so that another
+lab student could follow your development.
+
+A full theory section should not normally be needed for our advanced lab experiments.
+So use the introduction to present the main physics variables and formulas you will use.
+Trace their origin to the physics involved.
+Don't provide derivations, but do describe
+what new assumptions are needed.
+Formulas involving measurement conversions, instrument settings
+or other apparatus details should be relegated to the apparatus and experiment section.
+
+Here we will use the introduction to discuss technical writing issues. 
+
+One resource for developing into a strong
+technical writer is the UF Reading and Writing Center\cite{rwc}.
+Students can even receive free consultations 
+on their written reports through this office!
+
+An important part of your education as a physicist is learning to
+use standard tools for sharing your work with others.
+In Advanced Lab, we will instruct you in the use of \LaTeX\ for
+writing scientific papers in a widely accepted professional style.
+Articles submitted for publication in a professional journal
+must be suitably formatted according to the journal guidelines.
+Physical Review Letters and many others adhere to the
+\href{http://forms.aps.org/author/styleguide.pdf}{APS Physics Review Style and Notation Guide}.
+The \href {https://authors.aps.org/revtex4/}{REV\TeX\ homepage}
+has additional reference material.
+
+The source files\footnote
+{\url{http://uwf.edu/awade1/ModernLab/LabReport/sample-paper.zip}}
+for this document may be used as a template for your Advanced Lab papers.
+Spending a few hours studying and altering the sample-paper.tex
+and sample-paper.bib files will allow you to develop sufficient mastery of \LaTeX\ to easily
+generate all manner of technical documents.  Specific instructions
+for compiling \LaTeX\ documents on Windows operating systems are
+contained in the appendices.
+
+The writing process involves at least three distinct steps: prewriting or outlining,
+drafting, and revising or editing.  Given the tight time constraints in Advanced
+Lab, students are advised to begin the drafting process \textbf{before}
+finishing their lab sessions.  Most of the first draft can be accomplished during
+the latter sessions of an experiment.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a basic figure drawn using the asymptote package
+% see http://asymptote.sourceforge.net/ for more information
+%\begin{figure}
+%\centering
+%\begin{asy}
+%size(3cm);
+%draw(unitcircle);
+%\end{asy}
+%\caption{Embedded Asymptote Figure} \label {fig:asymptote1}
+%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Expository Writing}
+The essence of expository writing is the communication of understanding
+through a clear and concise presentation of predominately factual
+material.\cite{mayfield1998,pritchard1990} Most people cannot
+compose successful expository prose unless they put the need to
+communicate foremost among their priorities. Two things predominate
+in generating understanding in the reader:
+\begin{description}
+\item[Organization:] The reader must be provided with an overview or
+outline, know how each fact fits into that overall picture,
+and must be specifically alerted about any especially important fact.
+Furthermore, the facts must be presented in a logical order---so
+that fact 17 is not important for understanding fact 12.
+\item[Depth:] Bearing in mind the preexisting
+knowledge of the reader, the writer must budget the length of
+discussion allotted to each topic in proportion to its importance.
+\end{description}
+
+Writing a journal-like article for the lab report is great practice
+for improving your technical writing.
+Thus we urge you to concentrate on your overall presentation,
+not only on the facts themselves.
+We strongly recommend that you:
+\begin{enumerate}
+\item Base your report on an outline.
+\item Begin each paragraph with a topic sentence which expresses the
+main area of concern and the main conclusion of the paragraph. Put
+less important material later in the paragraph.
+\end{enumerate}
+
+Point 2 is frequently absent in novice reports; topic sentences are your
+mechanism for telling the reader what is under discussion
+and where it fits into the overall picture.
+You can check your topic sentences by reading them in order, i.e.,
+omit all the following sentences in each paragraph; this should
+give a fair synopsis of your paper.
+
+If you are writing up results you obtained with a partner,
+use we for work performed together and I for work performed alone.
+Use the past tense for your procedure and analysis,
+and the present for your results. 
+``LiF xray diffraction angles \emph{were} measured to
+$\pm 0.2^\circ$ and \emph{are} consistent with an FCC lattice
+with a spacing $a_0=(4.035\pm0.014)\,\mbox{nm}$.''
+Note that units are in normal (not math) fonts; the source file
+shows how to make this happen while inside the \LaTeX\ math mode.
+
+\textbf{Lastly: Remember to proofread your paper for spelling and grammar
+ mistakes.  Few things are as offensive to a reviewer as careless
+ writing and such mistakes will count against you!}
+
+\section{Apparatus and Experiment}
+
+With reference to one or more figures, this section describes the apparatus
+and procedures that give rise to the raw data.  Also discuss the data's 
+random errors and the sources and sizes of possible systematic errors.
+Include here critical observations of any noteworthy issues associated with the apparatus.
+
+The apparatus figure should contain a block diagram or schematic of the equipment and perhaps
+include the most important signal processing steps.
+The figure should be referenced and placed as early as possible in this section.
+
+Place additional information within the figures or in their captions
+to help you stay within the four page limit.
+\textbf{Example first sentence of an experimental section:}
+The experimental apparatus consists of a specially prepared chemical
+sample containing $^{13}$CHCl$_3$, an NMR spectrometer, and a control
+computer, as shown in Fig.~\ref{fig:samplefig}.
+
+%
+% Note, when including figures in a TeX document,
+% we suggest you first create the figures as
+% PDF files and then include them in the following way -
+% without the .pdf suffix)
+%
+
+\begin{figure}[htb]
+\includegraphics[width=8cm]{sample-fig1}
+\caption{Figures should be inserted into the text in their natural positions.
+%They must be JPG or PNG bitmap figures or PDF images.
+Command options can be used to crop, scale, or rotate the figure.
+The size of this graphic was set by the width command.
+The aspect ratio defaults to 1.0 if the height is not also set.
+When creating figures, choose large font sizes in graph labels and other figure information;
+the figure should be legible when scaled to fit in a single column.
+This part---the caption---should be clear and comprehensible.
+Use the caption to elaborate on specific issues, features, complications, or operating procedures.
+Adapted from \cite{melissinos1966,melissinos2003}.\label{fig:samplefig}}
+\end{figure}
+
+\section{Analysis and Results}
+
+This section should demonstrate how the raw data lead to the main results.
+Make a complete estimate of the uncertainties in your results---both
+random and systematic.
+
+In some cases, it is proper to put data and analysis in the experiment section,
+particularly if it is more about the apparatus and its parameters than about the main physics
+of the experiment.
+And in some cases, it is proper to describe procedures in this section.
+When it aids the logical flow of the paper, keep procedures,
+data, analysis, and results together.
+
+Either here or in the previous section, be sure to display representative raw data.
+Where there is an abundance of data, consider using an appendix to present it.
+See, for example, Fig.~\ref{fig:landscapegraphic}.
+
+\begin{figure}[htb]
+\includegraphics[width=9cm]{sample-fig2.pdf}	%trim = 0in 0.5in 0in 0.5in, (would shave off the top and bottom of the figure)
+\caption{Sample figure describing a set of data, fit procedures and
+results. Use the caption space to provide more details about the
+fitting procedure, results or implications if you do not have
+sufficient room in the main body of text.
+%This figure was created using the Matlab script at
+% \url{web.mit.edu/8.13/matlab/fittemplate07.m}
+\label{fig:calibration}
+}
+\end{figure}
+
+
+\begin{figure}[htb]
+\includegraphics[width=9cm]{sample-fig3.pdf}			%trim = 0in 0.5in 0in 0.5in, (would shave off the top and bottom of the figure)
+\caption{Sample figure showing overall physical relationship you set
+out to test.
+%This figure was created using the Matlab script at
+%\url{web.mit.edu/8.13/matlab/fittemplate07.m}
+\label{fig:frenchtaylor}
+}
+\end{figure}
+
+Often the raw data are analyzed in a specific way that needs to be clearly
+communicated to the reader.  For example, the peak positions in a
+spectrum may be required.  A graphic demonstrating a typical
+fit result, functional model, and reduced $\chi^2$ is shown in
+Fig.~\ref{fig:calibration}. Finally, there should be a graph or table
+which summarizes the experimental data, and which conveys the primary
+findings of the laboratory exercise.
+For example, the Geiger-Nuttall relationship as shown in Fig.~\ref{fig:frenchtaylor}
+or Table~\ref{tab:table1} containing results of xray spectra analyses.
+
+\begin{table}[htb]
+\caption{\label{tab:table1}An example table with footnotes.  Note
+that several entries share the same footnote. Always use a preceding
+zero in the data you record in tables.  \textbf{Always display units}.
+Inspect the \LaTeX\ input for this table to see exactly how it is
+done.}
+\begin{ruledtabular}
+\begin{tabular}{cccccccc}
+ &$r_c$ (\AA)&$r_0$ (\AA)&$\kappa r_0$&
+ &$r_c$ (\AA) &$r_0$ (\AA)&$\kappa r_0$\\
+\hline
+Cu& 0.800 & 14.10 & 2.550 &Sn\footnotemark[1] & 0.680 & 1.870 & 3.700 \\
+Ag& 0.990 & 15.90 & 2.710 &Pb\footnotemark[1] & 0.450 & 1.930 & 3.760 \\
+Tl& 0.480 & 18.90 & 3.550 & & & & \\
+\end{tabular}
+\end{ruledtabular}
+\footnotetext[1]{Here's the first, from Ref.~\cite{bevington2003}.}
+\end{table}
+
+Additional graphics, such as Figure~\ref{fig:calibration}, should be well
+thought out and crafted to maximize their information content while
+retaining clarity of expression.
+Try to avoid the temptation to inundate the reader with too many
+graphics.  It is worth spending some time thinking of how best to
+present information rather than just creating graph after graph of
+uninformative data.
+
+% Use the comment environment rather than leading % signs to
+% comment out a section of the file as follows.
+% This environment is defined in the verbatim macro package.
+ 
+\begin{comment}
+
+%Everything between the begin and end comment command is not processed.
+%This is a good way to temporarily delete a section of material you might
+%decide later to put back in.
+
+\begin{figure*}[htb]
+\includegraphics[angle=0,width=10cm]{sample-fig6}
+\caption{Sample paneled figure created in Matlab using the
+subplot(2,2,x) command where x is the element of the plot array into
+which all subsequent commands such as plot(x,y) and xlabel('Volts'), etc., get processed.
+Use the caption space to provide more details
+about the data, their acquisition or how they were processed if you do
+not have sufficient room in the main body of text.  Figures can be
+rotated using the angle option, see the TeX file for details.  If a
+figure is to be placed after the main text use the ``figure*'' option
+to make it extend over two columns, see the \LaTeX file for how this
+was done.}
+\label{fig:panel2x2}
+\end{figure*}
+
+\end{comment}
+
+
+\section{Conclusions}
+
+Summarize and discuss the findings of the experiment.
+Report all your results with appropriate significant digits, units, and uncertainties,
+e.g., $Q = (2.12 \pm 0.06)\times 10^{10}$~disintegrations s$^{-1}$. 
+When appropriate, compare your results with
+theoretical expectations or other experimental values
+with respect to the standard deviations of the quantities involved.
+Make suggestions for improvements and describe additional experiments
+that could be attempted with this or an improved apparatus.
+Be adventurous with your suggestions.
+
+It is worth mentioning here some thoughts on \textbf{ethics and writing
+in science}.
+
+When you read the report of a physics experiment in a reputable
+journal (e.g., Physical Review Letters) you can generally assume it
+represents an honest effort by the authors to describe exactly what
+they observed. You may doubt the interpretation or the theory they
+create to explain the results. But at least you trust that if you
+repeat the manipulations as described, you will get essentially the
+same experimental results.
+
+Nature is the ultimate enforcer of truth in science. If subsequent
+work proves a published measurement is wrong by substantially more
+than the estimated error limits, a reputation shrinks. If fraud is
+discovered, a career may be ruined. So most professional scientists
+are very careful about the records they maintain and the results and
+errors they publish.
+
+In keeping with the spirit of trust in science, Advanced Lab instructors
+will assume that what you record in your lab book and report in your
+written and oral presentations is exactly what you have observed.
+
+Using other people's words without acknowledgement is a
+serious intellectual crime and possible causes for dismissal from the University.
+The appropriate way to incorporate an
+idea which you have learned from a textbook or other reference is to
+study the point until you understand it and then put the text aside
+and state the idea in your own words.
+Fabrication or falsification of data and using the results of
+another person's work without acknowledgement are offenses of similar gravity.
+
+One often sees, in a scientific journal, phrases such as ``Following
+Bevington and Melissinos \cite{bevington2003, melissinos1966} ...''
+This means that the author is following the ideas or logic of these
+authors and not their exact words.
+If you do choose to quote material, it is not sufficient just to
+include the original source among the list of references at the end of
+your paper. If a few sentences or more are imported from another
+source, that section should be
+
+\begin{quote}indented on both sides or enclosed in
+quotes, and attribution must be given immediately in the form of a
+reference note.\cite{melissinos1966}
+\end{quote}
+
+If you have any question at all about attribution of sources, please
+see the course instructor.
+The University has produced an
+\href{http://uwf.edu/library/research_help/using-sources-ethically/}{online video}
+with additional information about how to avoid plagiarism.
+
+\begin{figure*}[htb] %The {figure*} environment is used for two-column figures.
+\label{fig:crop}
+\includegraphics[trim=0.2cm 0.2cm 3in 8.5in, clip=true, width=6in]{sample-fig4}
+%The trim option in the includegraphics command trims off the
+%left, bottom, right, and top lengths from the PDF file containing the figure.
+\caption{
+This is a two-column figure using the \texttt{figure*} environment. 
+Two column figures can't be on the first page and \LaTeX\ often
+has trouble with their placement.
+}
+\begin{comment}
+\end{comment}
+\end{figure*}
+
+\section{Bibliography Remarks}
+
+Bibliographies are very important in Advanced Lab papers.  Beyond the
+requisite citation of source material, they provide evidence of your
+literature research beyond the experimental guides.
+Literature searches, appropriate references to other research, and bibliographies
+are an integral part of experimental research.
+Bibliographic entries are made within a separate `.bib'
+file which gets attached during the process of building a final PDF
+document.  See the bibliography file sample-paper.bib (included in the zip file)
+for details on several types of bibliographic entries and their required and
+optional fields.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Place all of the references you used to write this paper in a file
+% with the file name then referenced in the \bibliography command as follows
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{comment}
+
+\section{Sectioning}
+
+The recommended \verb+aps+ option in the \verb+documentclass+ command
+creates the sectioning style shown here. 
+
+\subsection{Subsection Title}
+
+In a short paper, you shouldn't get below subsections.
+
+\subsubsection{Subsubsection Title}
+
+Subsubsections look like this.
+
+\end{comment}
+
+\section{Typesetting Mathematics}
+
+One of the great powers of \LaTeX\ is it's ability to typeset all
+manner of mathematical expressions.  While it does take a short
+while to get used to the syntax, it will soon become second nature.
+Numbered, single-line equations are the most common and are usually
+referenced in the text; e.g., see Eq.~\ref{eq:first-equation}.
+%
+\begin{equation}
+   \chi_+(p)\alt{\bf [}2|{\bf p}|(|{\bf p}|+p_z){\bf ]}^{-1/2}
+   \left(
+   \begin{array}{c}
+      |{\bf p}|+p_z\\
+      px+ip_y
+   \end{array}\right)
+\,. \label{eq:first-equation}
+\end{equation}
+%
+% Be sure there is NO EMPTY LINE after \end{quation} and before the
+% following lines, if you do not want a new paragraph to start there
+% (and be indented).
+%
+Occasionally, long equations which span more than one line of a two-column page
+may be required.  A good solution is to split-up
+the equation into multiple lines and label all with a single
+equation number, like in Equation~\ref{eq:multilineeq}.  See the
+\LaTeX\ file to see how this is done.
+
+\begin{eqnarray}
+  \sum \vert M^{\text{viol}}_g \vert ^2
+   &=&  g^{2n-4}_S(Q^2)~N^{n-2} (N^2-1)
+\nonumber
+\\
+   &&   \times \left( \sum_{i<j}\right) \sum_{\text{perm}}
+            \frac{1}{S_{12}}  \frac{1}{S_{12}} \sum_\tau c^f_\tau
+\,.
+\label{eq:multilineeq}
+\end{eqnarray}
+
+It is often useful to group related equations to denote their
+relationship, e.g., in a derivation.  Enclosing single-line and
+multiline equations in \verb+\begin{subequations}+ and
+\verb+\end{subequations}+ will produce a set of equations that are
+``numbered'' with letters, as shown in Equations.~(\ref{subeq:1}) and
+(\ref{subeq:2}) below:
+\begin{subequations}
+\label{eq:whole}
+\begin{equation}
+  \left\{
+      \text{abc123}456abcdef\alpha\beta\gamma\delta1234556\alpha\beta
+       \frac{1\sum^{a}_{b}}{A^2}
+  \right\}
+%
+\,\label{subeq:1}
+\end{equation}
+\begin{eqnarray}
+  {\cal M} &=& ig_Z^2(4E_1E_2)^{1/2}(l_i^2)^{-1}
+                (g_{\sigma_2}^e)^2\chi_{-\sigma_2}(p_2).\label{subeq:2}
+\end{eqnarray}
+\end{subequations}
+Note how you can also create a reference to Eqs.~\ref{eq:whole}, i.e., all subequations, by proper
+location of the \verb+\label+ command that creates the references.
+
+Mathematics can also be placed directly in the text using
+delimiters: $\vec{\psi_1} = |\psi_1\rangle \equiv c_0|0\rangle +
+c_1|1\rangle \chi^2 \approx
+\prod\sum\left[\frac{y_i-f(x_i)}{\sigma_i}\right]^2 |\psi_1\rangle
+\sim \lim_{\mu \rightarrow \infty}p(x;\mu) \geq \frac{1}{\sqrt{2 \pi
+\mu}} e^{-(x-\mu)^2 / 2\mu}P(x) \ll \int_{-\infty}^x p(x')dx'a
+\times b \pm c \Rightarrow \nabla \hbar$.
+
+
+%The next line builds an inserts the bibliograhy.
+
+\bibliography{sample-paper}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\appendix
+\section{\LaTeX\ Under Windows}
+MiK\TeX\ (pronounced \emph{mik-tech} is a freely available, implementation of
+\TeX\ and related programs available from \url{www.miktex.org}. Note
+that MiK\TeX\ itself runs from a command line prompt and is not terribly
+convenient.  A very nice \LaTeX\ editor/shell called \TeX nicCenter
+is also freely available from
+\url{www.texniccenter.org}. 
+
+Once you've installed the above software, you will need to download
+\href{uwf.edu/awade1/ModernLab/LabReport/sample-paper.zip}{sample-paper.zip}
+and extract files listed below to their
+own directory in order to `rebuild' this document from scratch.
+You should probably build your report starting from
+bare-paper.tex which will lessen the amount of material
+that needs to be deleted.
+
+
+\begin{description}
+\item[sample-paper.tex]\ \ The main paper.
+\item[sample-paper.bib]\ \ The text file where reference information is located.
+\item[figure files]\ \ The files sample-fig1.pdf through sample-fig4.pdf files are PDF-viewable
+figures requested in the sample-paper.tex file.  They can be created with the PDFCreator printer available on the lab computers.
+\item[sample-paper.pdf]\ \ This is the PDF file created by the \LaTeX\ compiler.
+\item[bare-paper.tex]\ \ A nearly bare template.
+\end{description}
+Other output files such as a sample-paper.log file are also made during compilation.
+
+Use the \verb+LaTeX=>PDF+ Output Profile in the \TeX nicCenter toolbar to directly create pdf files
+from \LaTeX\ source files.  The toolbar includes `Build current file,' `View Output,' and
+`Build and view current file' options.  The first and last recompile the source
+into a pdf file.  The middle simply views the most current PDF\@.
+Typically two or three repeated calls to build the PDF output file are necessary to resolve any nested
+references.
+
+The \verb+\bibliography{sample-paper}+ command
+generates the bibliography at that point in the document.
+It invokes the `bibtex' macro package that reads in the
+bibliography file `sample-paper.bib' allowing citation references to
+be resolved.
+Additional files get
+regenerated when you build your PDF document.
+
+\textbf{\TeX nicCenter, includes a spell checker that ignores most \LaTeX\ 
+commands.  Be sure that you spell check and check grammar before handing in your paper!}
+
+\section{PDFCreator and \LaTeX}
+
+Excel and MatLab are the most common analysis tools used by Advanced Lab students
+for data analysis and graphing.  LabVIEW is our most commonly used
+software for experimental control and display.
+All lab software printable output can be saved directly into a `PDF'
+format by printing to the PDFCreator printer driver.
+If the output is a full $8.5\times 11$ inch PDF page, and you only 
+want an area, it can be cropped when inserted into the \LaTeX\ file.
+See the source file for the syntax.  This has been done on Fig.~\ref{fig:crop}.
+This figure uses the two-column \verb+figure*+ environment for a figure that
+needs the extra width.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Surround figure environment with turnpage environment for landscape presentation
+\begin{turnpage}
+\begin{figure*}[p]
+\includegraphics[width=20cm]{sample-fig5}
+\caption{For very large plots where important detail might be lost
+if too compressed, it can be convenient to use the `turnpage'
+environment for displaying in landscape mode. e.g., any experiment
+where a data set is acquired at several angular positions (21cm,
+e/m, Rutherford) or is time varying (Physics of Alpha Decay and
+Pulsed NMR.)  These full page graphics are usually best kept in
+appendices so as not to impede the flow of the paper.  Note that
+large tables can also be presented in this landscape environment if
+desired \label{fig:landscapegraphic}}
+\end{figure*}
+\end{turnpage}
+
+% tables should appear as floats within the text
+%
+% Here is an example of the general form of a table:
+% Fill in the caption in the braces of the \caption{} command. Put the label
+% that you will use with \ref{} command in the braces of the \label{} command.
+% Insert the column specifiers (l, r, c, d, etc.) in the empty braces of the
+% \begin{tabular}{} command.
+% The ruledtabular enviroment adds doubled rules to table and sets a
+% reasonable default table settings.
+% Use the table* environment to get a full-width table in two-column
+% Add \usepackage{longtable} and the longtable (or longtable*}
+% environment for nicely formatted long tables. Or use the the [H]
+% placement option to break a long table (with less control than
+% in longtable).
+% \begin{table}%[H] add [H] placement to break table across pages
+% \caption{\label{}}
+% \begin{ruledtabular}
+% \begin{tabular}{}
+% Lines of table here ending with \\
+% \end{tabular}
+% \end{ruledtabular}
+% \end{table}
+
+% To convert program (e.g., C++ Fortran, Matlab, LaTeX\) listings to a
+% form easily includable in a \LaTeX\ document
+%
+% type lgrind -s to see options
+% lgrind -llatex -i sample-paper.tex > sampleinputtex
+% creates a file sampleinput.tex which can then be included into this
+% document simply by uncommenting the next line
+%\lgrindfile{testinput.tex}
+
+\end{document}
