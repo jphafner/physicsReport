@@ -3,6 +3,7 @@
 
 # table of contents
 - [introduction](#introduction)
+- [expectations](#expectations)
 - [lesson-plan](#lesson-plan)
 - [dependencies](#dependencies)
 - [resources](#resources)
@@ -20,16 +21,23 @@ I should add a word of caution,
     I was criticized by my superiors because they viewed this as not being sufficiently scaffolded.
 I would recommend having this approved by your superiors before utilizing this to help protect yourself.
 
+# expectations
+
+Least ink
+
+uncertainty, min and max
+
 # lesson-plan
 
-## exploration
 
-## concept invention
+## exploration (the E)
+
+## concept invention (the I)
 
 This would be a good time for whiteboarding,
     make your own whiteboard to fill in the gaps of what you see.
 
-## application
+## application (the A)
 
 Where they write, and I proof read.
 
