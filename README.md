@@ -39,10 +39,13 @@ These are only necessary if you desire to compile on your personal machine.
 I will recommend [Share LaTeX](https://www.sharelatex.com) once again,
     as they have all necessary dependencies already.
 
-- [revtex4-1](https://ctan.org/pkg/revtex4-1/)
-- [TikZ/PGF](http://www.texample.net/tikz/)
+- [hyperref](http://ctan.org/pkg/hyperree/)
+- [microtype](http://ctan.org/pkg/microtype/)
 - [pgfplots](http://pgfplots.net/)
+- [revtex4-1](https://ctan.org/pkg/revtex4-1/)
 - [siunitx](https://ctan.org/pkg/siunitx/)
+- [subcaption](https://ctan.org/pkg/subcaption/)
+- [TikZ/PGF](http://www.texample.net/tikz/)
 
 # resources
 
