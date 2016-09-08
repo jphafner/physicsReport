@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+## TODO: pass n as argument, have default if not provided
+
 # Script to generate and print n bingo cards
 n=25
 

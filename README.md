@@ -5,7 +5,6 @@
 The purpose of this project is to provide a formal laboratory template that complies with professional style conventions.
 It is recommended that this project be zip archived for upload to [Share LaTeX](https://www.sharelatex.com).
 
-
 ## Dependencies
 
 These are only necessary if you desire to compile on your personal machine.

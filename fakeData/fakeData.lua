@@ -24,7 +24,7 @@ function gaussian()
 end
 --
 -- Random Value
--- \sqrt{\frac{l}{g\cos(\theta/2)}}
+-- 2\pi\sqrt{\frac{l}{g\cos(\theta/2)}}
 function printPeriod(length,angle,sigma)
     period = 2 * math.pi * math.sqrt(length / (9.80665 * math.cos(math.pi*angle/360) ) )
     var = sigma*gaussian() / period

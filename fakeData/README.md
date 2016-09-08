@@ -1,5 +1,8 @@
-# peopleBino
 
-Generate random people bingo cards with LaTeX and lua!
+# fake Data
 
-Motivated by Mr. Deoms lesson plans.
+Used to generate fake data for student lab reports.
+
+I find this helps on focusing just on the writing aspect.
+This also keeps every lab report unique.
+
