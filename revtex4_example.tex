@@ -33,8 +33,9 @@
 \usepackage{graphicx}
 \usepackage{verbatim}
 
+%% graphs are made internally
 \usepackage{tikz,pgfplots}
-    \pgfplotsset{compat=1.9}
+    \pgfplotsset{compat=1.12}
 \usepgfplotslibrary{groupplots}
 \usetikzlibrary{calc}
 
@@ -85,6 +86,7 @@
         its interpretation.
     A good rule of thumb is to construct a paragraph using one 
         sentence summaries of each section of your lab report.
+    Some journals now subsection the abstract based on how the paper is divided.
 \end{abstract}
 
 \maketitle
@@ -96,8 +98,12 @@
 %%---------------------------------------
 
 \section{Introduction}
-    %% NOTE: use \ref{sec:intro} to refer to this section in text
     \label{sec:intro}
+
+    %% NOTE: use \ref{sec:intro} to refer to this section in text
+    This is section \ref{sec:intro},
+        it comes after the abstract and before section \ref{sec:methods}.
+
     Describe what concept/s the lab explores, 
         the main objective of the lab, 
         what actions you performed, 
@@ -109,8 +115,8 @@
         with the American Physical Society's Style and Notation
         Guidelines for their publications.
 
-    While your lab report is not required to be formatted for
-        publication, it should strive to achieve it.
+    While your lab report is not required to be formatted for publication,
+        it should strive to achieve it.
     By abiding by professional standards, you too can help ensure
         that your lab report is as clear and concise as possible.
    
@@ -246,6 +252,7 @@
         result and other salient details.
     Arrange the results section in an organized fashion.
     \begin{itemize}
+        %% NOTE: inline lists, using itemize*, are much preferred, LEAST INK!!
         \item Data Tables: Organized and labeled with units.
         \item Graphs: Properly label all axes, provide appropriate title.
         \item Explanations: The key relationship from each table or graph
@@ -270,7 +277,8 @@
         \end{tabular}
         \end{ruledtabular}
         \label{tab:data-table}
-        \caption{Caption for experimental data table}
+        \caption{Caption for experimental data table,
+            please note that it is not necessary placed inline to where it is in the source file}
     \end{table*}
 
     %% NOTE: use \begin{figure*} for fullpage figure
@@ -286,7 +294,8 @@
         \end{axis}
     \end{tikzpicture}
     \label{fig:data-graph}
-    \caption{Caption for experimental data graph}
+    \caption{Caption for experimental data graph,
+        please note that it is not necessary placed inline to where it is in the source file}
     \end{figure*}
 
 %% Begin Discussion
@@ -355,11 +364,13 @@
     \end{itemize*}
 
 \section{Checklist}
-    As any physics teacher will tell you, units are the single most common mistake that students will make.
+    As any physics teacher will tell you,
+        units are the single most common mistake that physics students will make.
     It is highly recommended that you review the NIST Checklist for Reviewing Manuscripts\cite{NISTsp811}.
-    I am listing this checklist twice, because it really is twice as important as everything else.
+    I am listing this checklist twice,
+        because it is \emph{twice} as important as everything else.
 
-    Before submitting you report, please verify that all necessary elements are present.
+    Before submitting your report, please verify that all necessary elements are present.
     While this list will not be used for grading,
         it is a good idea to use it to double check your report.
     With many thanks to Chad Orzel\cite{Orzel}.
@@ -420,7 +431,20 @@
 %%---------------------------------------
 
 \section{Equations}
-Some inline scientific notation $4.0\times 10^{-3}\,\mathrm{N/m}$,
+This is just a section filled with random items as reference.
+
+The Maxwell equations of Electromagnetism with equation alignment using align and the ampersand,
+    which is a ligature of et, which means and in Latin:
+\begin{align}
+    \del\cdot\mathbf{E} &= \dfrac{\rho}{\epsilon_0} \\
+    \del\cdot\mathbf{B} &= 0 \\
+    \del\times\mathbf{E} &= \dfrac{\partial\mathbf{B}}{\partial t} \\
+    \del\times\mathbf{B} &= \mu_0 \left(\mathbf{J} + \epsilon_0 \dfrac{\partial\mathbf{E}}{\partial t} \\
+\end{align}
+
+%% NOTE: that units are typed in roman fonts, not italic fonts as variables are!!
+%% NOTE: also note that there is a forced small space between the number and units!!
+Some inline scientific notation $4.0\times 10^{-3}\,\mathrm{N/m}$\cite{NISTsp811},
     and some more that is in displaystyle
 \begin{equation}
     4.0\times 10^{-3}\,\mathrm{N/m}
@@ -430,6 +454,9 @@ Some simple equation
     \Delta =\sum_{i=1}^N w_i (x_i - \bar{x})^2.
 \end{equation}
 \begin{equation}
+    %% NOTE: use nonumber to remove the equation numbering,
+    %%      or equation* instead of equation
+    %% NOTE: YOU SHOULD NEVER REMOVE THE EQUATION NUMBERING!!
     P(x) = \frac{x - a}{b - a}, \nonumber
 \end{equation}
 \begin{equation}
@@ -491,7 +518,8 @@ $\alpha$, $\beta$, $\gamma$, $\Gamma$, $\delta$, $\Delta$, $\epsilon$, $\zeta$, 
 \section{Acknowledgments}
 \label{sec:ack}
 \begin{acknowledgments}
-    Resources for this laboratory were provided by this school.
+    %% NOTE: if you received any financial support, this is required for tracking purposes
+    Resources for this laboratory were provided by ``a school''.
     Special thanks and acknowledgments for the guidance provided by Dr. Jeffrey P. Hafner.
 \end{acknowledgments}
 
