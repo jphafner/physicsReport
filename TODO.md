@@ -1,4 +1,7 @@
 
+-[ ] Add links to revtex4 user guide instead of storing the pdfs,
+    both in the README and in the revtex_template.tex
+
 
 -[ ] convert below rubric into something better
 -[ ] http://www.union.edu/Resources/Academic/writing/Help/Faculty/Orzel/GuideToWritingLabReports.php
