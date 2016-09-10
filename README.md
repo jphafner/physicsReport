@@ -3,7 +3,6 @@
 
 # table of contents
 - [introduction](#introduction)
-- [expectations](#expectations)
 - [lesson-plan](#lesson-plan)
 - [dependencies](#dependencies)
 - [resources](#resources)
@@ -15,22 +14,51 @@ It is recommended that this project be zip archived for upload to [Share LaTeX](
 
 ```bash
 $ zip -r physicsReport.zip revtex_example*
-```
 
 I should add a word of caution,
     I was criticized by my superiors because they viewed this as not being sufficiently scaffolded.
 I would recommend having this approved by your superiors before utilizing this to help protect yourself.
 
-# expectations
+# lesson-plan
+
+This is my take on doing a formal laboratory report.
+Take it with a grain of salt,
+    as this reflects my values and experience.
+
+The key feature of a formal laboratory is that it complies with professional standards and has been peer reviewed.
+As long as the student submitted a draft copy for review,
+    and were confident in checking off everything on the checklist,
+    I gave them full credit.
+If they submitted it for grading, without previously submitting for review and made changed accordingly,
+    I would grade based on the rubric.
+
+As for expectations for expressing uncertainty,
+    I would expect all students to be able to express the average of measurement with a minimum and maximum value.
+They could then use the average, minimum and maximum value for any calculated value.
+For advanced students, I would expect then to be able to calculate the expectation and variance,
+    and to propogate uncertainty accordingly in all calculated values.
+I would provide any necessary formulas.
+If _E[x]_ is the expectation of the variable _x_,
+    then the variance can be calculated by _Var[x] = E[x<sup>2</sup>] - E[x]<sup>2</sup>_.
 
 Least ink
 
 uncertainty, min and max
 
-# lesson-plan
 
+fake data for first year students,
+    real data for advanced students or second year students.
 
 ## exploration (the E)
+
+I only provide direct instruction to the point of having the zip file uploaded to [Share LaTeX](https://www.sharelatex.com).
+I would also recommend reviewing some keyboard shortcutes,
+    Ctrl-Z for undo, Ctrl-Y for redo, Ctrl-X for cut, Ctrl-C for copy, Ctrl-V for paste.
+
+Once the entire class has the zip file successfully loaded to [Share LaTeX](https://www.sharelatex.com),
+    I instruct them to make _small_ edits, and to recompile to see what happens.
+I would give them at least 30 minutes to explore.
+I think giving the students time to explore with no expectation is important.
 
 ## concept invention (the I)
 
@@ -40,6 +68,7 @@ This would be a good time for whiteboarding,
 ## application (the A)
 
 Where they write, and I proof read.
+Checkout Benjamin Crowell's [_Light and Matter_](http://lightandmatter.com/lab_comment_codes.pdf) for ideas on comment codes.
 
 # dependencies
 
