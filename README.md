@@ -14,6 +14,7 @@ It is recommended that this project be zip archived for upload to [Share LaTeX](
 
 ```bash
 $ zip -r physicsReport.zip revtex_example*
+```
 
 I should add a word of caution,
     I was criticized by my superiors because they viewed this as not being sufficiently scaffolded.
