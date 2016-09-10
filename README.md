@@ -37,23 +37,38 @@ As for expectations for expressing uncertainty,
     I would expect all students to be able to express the average of measurement with a minimum and maximum value.
 They could then use the average, minimum and maximum value for any calculated value.
 For advanced students, I would expect then to be able to calculate the expectation and variance,
-    and to propogate uncertainty accordingly in all calculated values.
+    and to propagate uncertainty accordingly in all calculated values.
 I would provide any necessary formulas.
 If _E[x]_ is the expectation of the variable _x_,
     then the variance can be calculated by _Var[x] = E[x<sup>2</sup>] - E[x]<sup>2</sup>_.
 
-Least ink
+For first year students, I wanted the students to focus purely on the writing aspect,
+    so I generated [fake data](https://github.com/jphafner/fakeData) for each student.
+This gave each student unique data, so each report would be different.
+The students were to write the methods section as how they would do it if they did.
+I thought this was important to help keep the assignment in the zone of proximal development.
+This will likely represent the first formal technical writing assignment for many of the students.
 
-uncertainty, min and max
+For second year students or advanced students,
+    I would want real data from any of the labs they performed.
+I allowed for great flexibility on what the students could write about.
 
-
-fake data for first year students,
-    real data for advanced students or second year students.
+For style conventions, I strongly pushed the idea of _Least Ink_.
+This means that you should have to defend every piece of ink on the paper,
+    and that if you can not defend its presence, it should be removed.
+This is a very simple and powerful idea.
+I also only gave a maximum submission size of four pages,
+    and not a minimum submission size.
+When I asked students to defend a line placed on a graphic,
+    or a superfluous word, and if they could not defend it,
+    I would remind them to remove it.
+Also, I did not push for a passive or active voice,
+    as many do, I would frame the question through the least ink principle.
 
 ## exploration (the E)
 
-I only provide direct instruction to the point of having the zip file uploaded to [Share LaTeX](https://www.sharelatex.com).
-I would also recommend reviewing some keyboard shortcutes,
+I only provided direct instruction to the point of having the zip file uploaded to [Share LaTeX](https://www.sharelatex.com).
+I would also recommend reviewing some keyboard shortcuts,
     Ctrl-Z for undo, Ctrl-Y for redo, Ctrl-X for cut, Ctrl-C for copy, Ctrl-V for paste.
 
 Once the entire class has the zip file successfully loaded to [Share LaTeX](https://www.sharelatex.com),
@@ -65,11 +80,13 @@ I think giving the students time to explore with no expectation is important.
 
 This would be a good time for whiteboarding,
     make your own whiteboard to fill in the gaps of what you see.
+I also gave a presentation on some of the basics ideas of a formal lab report.
 
 ## application (the A)
 
-Where they write, and I proof read.
-Checkout Benjamin Crowell's [_Light and Matter_](http://lightandmatter.com/lab_comment_codes.pdf) for ideas on comment codes.
+Where they write, and I proofread.
+Checkout Benjamin Crowell's [_Light and Matter_](http://lightandmatter.com)
+    for ideas on [comment codes](http://lightandmatter.com/lab_comment_codes.pdf).
 
 # dependencies
 
