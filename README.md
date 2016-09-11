@@ -32,6 +32,9 @@ As long as the student submitted a draft copy for review,
     I gave them full credit.
 If they submitted it for grading, without previously submitting for review and made changed accordingly,
     I would grade based on the rubric.
+I view perfection as a process, and not as an achievable state.
+The student must show that they iterated towards perfection,
+    but not necessarily that they achieved perfection.
 
 As for expectations for expressing uncertainty,
     I would expect all students to be able to express the average of measurement with a minimum and maximum value.
@@ -39,7 +42,7 @@ They could then use the average, minimum and maximum value for any calculated va
 For advanced students, I would expect then to be able to calculate the expectation and variance,
     and to propagate uncertainty accordingly in all calculated values.
 I would provide any necessary formulas.
-If _E[x]_ is the expectation of the variable _x_,
+For instance: If _E[x]_ is the expectation of the variable _x_,
     then the variance can be calculated by _Var[x] = E[x<sup>2</sup>] - E[x]<sup>2</sup>_.
 
 For first year students, I wanted the students to focus purely on the writing aspect,
@@ -48,6 +51,7 @@ This gave each student unique data, so each report would be different.
 The students were to write the methods section as how they would do it if they did.
 I thought this was important to help keep the assignment in the zone of proximal development.
 This will likely represent the first formal expository writing assignment for many of the students.
+Which requires an odd mixture of precision, clarity and marketing.
 
 For second year students or advanced students,
     I would want real data from any of the labs they performed.
