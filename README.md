@@ -39,7 +39,7 @@ The student must show that they iterated towards perfection,
 As for expectations for expressing uncertainty,
     I would expect all students to be able to express the average of measurement with a minimum and maximum value.
 They could then use the average, minimum and maximum value for any calculated value.
-For advanced students, I would expect then to be able to calculate the expectation and variance,
+For advanced students, I would expect them to be able to calculate the expectation and variance,
     and to propagate uncertainty accordingly in all calculated values.
 I would provide any necessary formulas.
 For instance: If _E[x]_ is the expectation of the variable _x_,
