@@ -47,7 +47,7 @@ For first year students, I wanted the students to focus purely on the writing as
 This gave each student unique data, so each report would be different.
 The students were to write the methods section as how they would do it if they did.
 I thought this was important to help keep the assignment in the zone of proximal development.
-This will likely represent the first formal technical writing assignment for many of the students.
+This will likely represent the first formal expository writing assignment for many of the students.
 
 For second year students or advanced students,
     I would want real data from any of the labs they performed.
