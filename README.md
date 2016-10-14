@@ -43,7 +43,7 @@ For advanced students, I would expect them to be able to calculate the expectati
     and to propagate uncertainty accordingly in all calculated values.
 I would provide any necessary formulas.
 For instance: If E[_x_] is the expectation of the variable _x_,
-    then the variance can be calculated by Var[_x_] = E[_x_<sup>2</sup>] - E[_x_]<sup>2</sup>.
+    then the variance can be calculated by Var[_x_] = E[_x_<sup>2</sup>] &minus; E[_x_]<sup>2</sup>.
 
 For first year students, I wanted the students to focus purely on the writing aspect,
     so I generated [fake data](https://github.com/jphafner/fakeData) for each student.
