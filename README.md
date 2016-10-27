@@ -114,6 +114,9 @@ I will recommend [Share LaTeX](https://www.sharelatex.com) once again,
 
 # resources
 
+- [Write Good Scripts](http://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/)
+- [Sample Paper](http://web.mit.edu/8.13/www/Samplepaper/sample-paper.tex)
+
 - [Edward Tufte](https://www.edwardtufte.com/tufte/)
 - [Excel Charts](http://www.excelcharts.com/blog/posts/)
 - [The Mayfield Handbook](http://www.mit.edu/course/21/21.guide/)

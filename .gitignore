@@ -24,7 +24,6 @@
 *.synctex.gz
 
 # Project specfic
-scripts/
 *.pdf
 
 # RevTeX specific
