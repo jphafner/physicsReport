@@ -16,10 +16,6 @@ It is recommended that this project be zip archived for upload to [Share LaTeX](
 $ zip -r physicsReport.zip revtex_example*
 ```
 
-I should add a word of caution,
-    I was criticized by my superiors because they viewed this as not being sufficiently scaffolded.
-I would recommend having this approved by your superiors before utilizing this to help protect yourself.
-
 # lesson-plan
 
 This is my take on doing a formal laboratory report.
